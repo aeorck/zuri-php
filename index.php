@@ -11,6 +11,7 @@
     input{
         height:20px;
         margin:auto;
+        font-size:15px;
     }
 
     select{
@@ -27,7 +28,7 @@
     }
 </style>
 <body>
-    <form action="./saved.php" method="post">
+    <form action="./user_data.php" method="post">
         <label for="name">Name:</label>
         <input required type="text" name="name" id="name">
 
@@ -43,8 +44,8 @@
 <br>
         <label for="gender">Gender:</label>
         <select name="gender" id="gender" required>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
             <option value="null">Prefer not to Say</option>
         </select>
         <br>
