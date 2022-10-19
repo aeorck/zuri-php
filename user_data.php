@@ -28,13 +28,15 @@ print_r("Country: $country <br> <br>");
 
 
 
+$jim= array($name,$email,$dob,$gender,$country);
 
 
-$the_file="./user_data.csv";
-$file=fopen($the_file, "w");
 
 
-fputcsv($file, $name, $email, $dob, $gender, $country,);
+$file=fopen("./user_data.csv", "a");
+
+fputcsv($file,$jim);
+
 fclose($file);
 
 ?>
